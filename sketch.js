@@ -51,12 +51,8 @@ function draw() {
   rope5.display();
   drawSprites();
  }
- function keyPressed() {
-  if (keyCode === UP_ARROW) {
-    Matter.Body.applyForce(bobObject3.body, bobObject5.body.position,{x:75,y:-75});
-   }
- }
-
-
-
+function mouseDragged ()
+{
+Matter.Body.setPosition(penduml.body,{x:mouseX,y:mouseY}
+}
 
